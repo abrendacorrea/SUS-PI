@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exames - App SUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Exames Realizados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Exame</th>
+                    <th>Data</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="exames-list">
+                <tr>
+                    <td>Hemograma Completo</td>
+                    <td>01/02/2023</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>Raio-X Tórax</td>
+                    <td>15/03/2023</td>
+                    <td>Sem Alterações</td>
+                </tr>
+                <tr>
+                    <td>Ultrassonografia Abdominal</td>
+                    <td>20/04/2023</td>
+                    <td>Normal</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Adicionar Novo Exame</h2>
+        <form id="exame-form">
+            <label for="exame">Exame:</label>
+            <input type="text" id="exame" name="exame" required>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" name="resultado" required>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div>
+    <div class="buttons">
+        <button class="home-button"> <a href="/home.html"> VOLTAR </a></button>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

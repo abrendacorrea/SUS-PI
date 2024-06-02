@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Agendadas - App SUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Consultas Agendadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Local</th>
+                    <th>Médico</th>
+                </tr>
+            </thead>
+            <tbody id="consultas-list">
+                <tr>
+                    <td>10/06/2024</td>
+                    <td>14:30</td>
+                    <td>Posto de Saúde Central</td>
+                    <td>Dr. José Almeida</td>
+                </tr>
+                <tr>
+                    <td>15/06/2024</td>
+                    <td>09:00</td>
+                    <td>Clínica da Família</td>
+                    <td>Dra. Maria Oliveira</td>
+                </tr>
+                <tr>
+                    <td>20/06/2024</td>
+                    <td>11:00</td>
+                    <td>Hospital Municipal</td>
+                    <td>Dr. Carlos Souza</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Adicionar Nova Consulta</h2>
+        <form id="consulta-form">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" required>
+            
+            <label for="medico">Médico:</label>
+            <input type="text" id="medico" name="medico" required>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div class="buttons">
+        <button class="home-button"> <a href="/home.html"> VOLTAR </a></button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

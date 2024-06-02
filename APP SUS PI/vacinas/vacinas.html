@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacinas - App SUS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Vacinas Tomadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Vacina</th>
+                    <th>Data</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+            <tbody id="vacinas-list">
+                <tr>
+                    <td>Vacina Hepatite B</td>
+                    <td>05/10/2023</td>
+                    <td>Posto de Saúde Central</td>
+                </tr>
+                <tr>
+                    <td>Influenza Trivalente</td>
+                    <td>05/10/2023</td>
+                    <td>Posto de Saúde Central</td>
+                </tr>
+                <tr>
+                    <td>Vacina COVID</td>
+                    <td>05/10/2023</td>
+                    <td>Posto de Saúde Central</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Adicionar Nova Vacina</h2>
+        <form id="vacina-form">
+            <label for="vacina">Vacina:</label>
+            <input type="text" id="vacina" name="vacina" required>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" required>
+            
+            <button type="submit">Adicionar</button>
+        </form>
+       
+    
+    <div class="button-voltar">
+        <button class="home-button"> <a href="/home.html"> VOLTAR </a></button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
